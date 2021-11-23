@@ -1,7 +1,13 @@
+import { Provider } from 'react-redux';
+import Counter from './Counter';
+import store from '../store';
+
 function App() {
   return (
-    <div>React TS App</div>
+    <Provider store={store}>
+      <Counter />
+    </Provider>
   )
 }
 
-export default App
+export default App;
